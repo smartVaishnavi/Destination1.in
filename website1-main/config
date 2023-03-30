@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "yash"]
+	url = https://github.com/Yashharamkar/project1
+	fetch = +refs/heads/*:refs/remotes/yash/*
+[remote "origin"]
+	url = https://github.com/Yashharamkar/video-website.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main

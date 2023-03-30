@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SingnIn</title>
+  <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+
+  <h1 class="bg">Destination.in<br></h1>
+  <div class="login_popup" id="popup_form">
+
+    
+    
+
+    <div class="overlay1"></div>
+    <div class="box">
+      <div class="form">
+        <div class="close" id="close_btn">&times;</div>
+        <div class="login">        <h1>Login</h1>
+        </div>
+        
+        <div class="form_group">
+          <input type="text" placeholder="enter your email" class="popup_input">
+        </div>
+        <div class="form_group">
+          <input type="text" placeholder="enter your Password" class="popup_input">
+        </div>
+        <div class="form_group">
+          <label>
+            <input type="checkbox" >Remember me
+          </label>
+        </div>
+        <button  class="btn" onclick="myFunction()">Login</button>
+        <div class="link"> Not a member?
+          <a href="signUp.html" >create account</a>  
+        </div>
+       
+       
+   
+  
+  </div>
+  
+
+    <script type="text/javascript">
+
+      var popup_login = document.getElementById('popup_form');
+var close = document.getElementById('close_btn');
+
+window.addEventListener("load",function(){
+
+
+  setTimeout(function(){
+
+    popup_login.classList.add('anyname');
+
+  },2000)
+
+  
+})
+
+close.addEventListener("click",function(){
+  popup_login.classList.remove('anyname');
+})
+
+
+
+
+function myFunction(){
+  window.location="sliding.html";
+}
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

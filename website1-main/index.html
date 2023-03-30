@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination.com</title>
+    <link rel="stylesheet" href="./ysh.css">
+    <link rel="stylesheet" href="./ysh.js">
+   
+
+ 
+</head>
+<body>
+
+
+ 
+  <section class="showcase ">
+    <header>
+      <h2 class="logo">Tourism & Travel</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="video (1).mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Destination </h2> 
+      <h3>Exploring the incredible Maharshtra</h3>
+      <p>Magic happen in every corner of Maharshtra.. Maharshtra is a home to the finest architectural heritage, serene ghats, spectacular landscapes and largest tiger reserve</p>
+      <a href="#" id="explore" onclick="myFunction5()">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#" id="home" onclick="myFunction()">Signup</a></li>
+      <li><a href="#" id="services" onclick="myFunction6()">Services</a></li>
+      <li><a href="#" id="Destination" onclick="myFunction1()">Destination</a></li>
+      <li><a href="#" id="holiday" onclick="myFunction5()" >Holiday</a></li>
+      <li><a href="#" id="Places" onclick="myFunction4()" >places</a></li>
+      <li><a href="#" id="contact" onclick="myFunction2()">Contact</a></li>
+    </ul>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+  
+
+  <script>
+
+const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+   
+      let page = document.getElementById('loginpage');
+page.addEventListener('load',function(){
+  console.log("fully loaded");
+})
+
+function myFunction(){
+  window.location="loginpage.html";
+ 
+  
+}
+
+function myFunction1(){
+  window.location="sliding.html";
+}
+
+function myFunction6(){
+  window.location="services.html";
+}
+
+function myFunction2(){
+  window.location="contact2.html";
+}
+
+
+function myFunction4(){
+  window.location="destination.html";
+}
+
+function myFunction5(){
+  window.location="holiday.html";
+}
+
+
+
+
+var popup_login = document.getElementById('popup_form');
+var close = document.getElementById('close_btn');
+window.addEventListener("load",function(){
+  setTimeout(function(){
+    popup_login.classList.add('anyname');
+  },5000)
+})
+
+ </script>
+</body>
+</html>
